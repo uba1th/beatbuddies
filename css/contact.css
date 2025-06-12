@@ -1,0 +1,1019 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* contact section start */
+
+#contact-section{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-content{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact-content h1{
+    width: 90%;
+    font-size: var(--fs-48);
+    font-weight: var(--fwt-boldTwo);
+}
+
+.contact-content p{
+    width: 90%;
+    font-size: var(--fs-24);
+    font-weight: var(--fwt-semibold);
+}
+.contact-image{
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-image img{
+    width: 350px;
+    height: 350px;
+}
+
+/* contact section ends */
+
+/* accordion section starts */
+
+#accordion-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    margin: 20px 0px;
+}
+
+.accordion-container{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.accordion-heading{
+    width: 100%;
+    text-align: center;
+}
+
+.accordion-heading h1{
+    font-size: var(--fs-32);
+    color: var(--tertiary-black);
+}
+
+.accordion-wrapper{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.accordion-img{
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion-img img{
+    width: 350px;
+    height: 350px;
+    border-radius: 12px;
+}
+
+.accordion-holder{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.accordion-item{
+    width: 80%;
+    height: auto;
+    background-color: var(--secondary-color);
+    padding: 12px ;
+    border-radius: 4px;
+    
+}
+
+.accordion-item .set {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.accordion-item .set a{
+    width: 100%;
+    font-size: var(--fs-20);
+    color: var(--primary-color);
+    font-weight: var(--fwt-semibold);
+    padding: 12px 24px;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.accordion-item .accordion-content{
+    max-height : 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease-in-out, opacity 0.7s ease-in-out;
+}
+
+.accordion-item .accordion-content.active {
+    /* height: auto; */
+    max-height: 200px;
+    opacity: 1;
+}
+
+#accIcon{
+    transition: transform 0.5s ease;
+}
+
+#accIcon.rotate{
+    transform: rotate(180deg);
+}
+
+.accordion-item .accordion-content p{
+    font-size: var(--fs-16);
+    font-weight: var(--fwt-semibold);
+    padding: 12px 24px;
+}
+
+
+.fa-chevron-down{
+    margin: 0px 0px 0px 8px;
+}
+
+/* accordion section ends */
+
+/* form starts */
+
+#form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+}
+
+
+.form-container{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contact-heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-heading h1{
+    font-size: 32px;
+}
+
+
+#contact-form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.form-row-one{
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.form-row-one .uname{
+    width: 45%;
+    height: auto;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.form-row-one .uname input{
+    width: auto;
+    border: none;
+    background-color: var(--secondary-color);
+    /* height: 40px; */
+    border-radius: 4px;
+    padding: 12px;
+    background-color: var(--secondary-color);
+    box-shadow: var(--card-shadow);
+}
+
+
+.form-row-one .umail{
+    width: 45%;
+    height: auto;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+
+.form-row-one .umail input{
+    width: auto;
+    border: none;
+    background-color: var(--secondary-color);
+    /* height: 40px; */
+    border-radius: 4px;
+    padding: 12px;
+    box-shadow: var(--card-shadow);
+}
+
+.form-row-two{
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+
+.form-row-two .unumber{
+    width: 45%;
+    height: auto;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+
+.form-row-two .unumber input{
+    width: auto;
+    border: none;
+    background-color: var(--secondary-color);
+    padding: 12px;
+    border-radius: 4px;
+    box-shadow: var(--card-shadow);
+}
+
+
+
+.form-row-two .uplace{
+    width: 45%;
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-row-two .uplace .city{
+    width: 40%;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.form-row-two .city input{
+    width: auto;
+    border: none;
+    background-color: var(--secondary-color);
+    /* height: 40px; */
+    border-radius: 4px;
+    padding: 12px;
+    box-shadow: var(--card-shadow);
+}
+
+.form-row-two .uplace .state{
+    width: 45%;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+.form-row-two .uplace .city{
+    width: 45%;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+
+.form-row-two .state input{
+    width: auto;
+    border: none;
+    background-color: var(--secondary-color);
+    /* height: 40px; */
+    padding: 12px;
+    border-radius: 4px;
+    box-shadow: var(--card-shadow);
+}
+
+
+
+.form-row-three{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 12px;
+}
+
+
+.form-row-three .radio-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+
+.radio label{
+    font-size: 16px ;
+}
+
+.form-row-four{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: start;
+}
+
+.form-row-four .textbox{
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.form-row-four textarea{
+    width: auto;
+    border: none;  
+    /* height: 100px;  */
+    padding: 12px;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    box-shadow: var(--card-shadow);
+
+}    
+
+.formErr{
+    height: 20px;
+    font-size: 12px;
+}
+
+#validateErr{
+    height: 20px;
+    font-size: 12px;
+}
+
+
+.uname,.umail,.unumber,.city,.state,.radio-head,.textbox>label{
+    font-size: var(--fs-20);
+    font-weight: var(--fwt-semibold);
+    color: var(--tertiary-black);
+}
+
+
+#submitBtn{
+    border: none;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 4px;
+    font-size: var(--fs-16);
+    font-weight: var(--fwt-semibold);
+}
+
+.contact-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#validateErr{
+    height: 20px;
+}
+/* form ends */
+
+
+/* ------------------------------------ */
+
+/* media queiry starts for contact banner */
+
+@media screen and (max-width: 1200px){
+
+    .contact-content{
+        width: 45%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .contact-content h1{
+        width: 100%;
+        font-size: var(--fs-48);
+        font-weight: var(--fwt-boldTwo);
+    }
+    
+    .contact-content p{
+        width: 100%;
+        font-size: var(--fs-24);
+        font-weight: var(--fwt-semibold);
+    }
+
+}
+
+@media screen and (max-width: 1047px){
+
+    .contact-content{
+        width: 45%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .contact-content h1{
+        width: 100%;
+        font-size: var(--fs-42);
+        font-weight: var(--fwt-boldTwo);
+    }
+    
+    .contact-content p{
+        width: 100%;
+        font-size: var(--fs-24);
+        font-weight: var(--fwt-semibold);
+    }
+
+    .contact-image{
+        width: 40%;
+    }
+
+    .contact-image img{
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+@media screen  and (max-width:952px){
+
+    #contact-section{
+        width: 100%;
+        height: auto;
+        padding: 80px 0px;
+        margin: 20px 0px;
+    }
+
+    .contact-image{
+        width: auto;
+        z-index: -10;
+    }
+    .contact-content h1{
+        width: 100%;
+        font-size: var(--fs-36);
+        font-weight: var(--fwt-boldTwo);
+    }
+    
+    .contact-content p{
+        width: 100%;
+        font-size: var(--fs-20);
+        font-weight: var(--fwt-semibold);
+    } 
+
+}
+
+@media screen  and (max-width:787px){
+    
+    #contact-section{
+        width: 100%;
+        height: auto;
+        padding: 80px 0px;
+        margin: 20px 0px;
+    }
+
+    .contact-content{
+        width: 50%;
+    }
+
+    .contact-image img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .contact-content h1{
+        width: 100%;
+        font-size: var(--fs-32);
+        font-weight: var(--fwt-boldTwo);
+    }
+    
+    .contact-content p{
+        width: 100%;
+        font-size: var(--fs-20);
+        font-weight: var(--fwt-semibold);
+    } 
+
+}
+
+@media screen  and (max-width:690px){
+    
+        
+    #contact-section{
+        width: 100%;
+        height: auto;
+        padding: 60px 0px;
+        margin: 0px 0px;
+    }
+
+    .contact-container{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .contact-content{
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-content h1{
+        width: 100%;
+        font-size: var(--fs-32);
+        font-weight: var(--fwt-boldTwo);
+    }
+    
+    .contact-content p{
+        width: 100%;
+        font-size: var(--fs-20);
+        font-weight: var(--fwt-semibold);
+    } 
+
+    .contact-image img{
+        width: 250px;
+        height: 250px;
+    }
+
+}
+
+@media screen  and (max-width:556px){
+    
+
+    .contact-content h1{
+        width: 100%;
+        font-size: var(--fs-28);
+        font-weight: var(--fwt-boldTwo);
+    }
+    
+    .contact-content p{
+        width: 100%;
+        font-size: var(--fs-20);
+        font-weight: var(--fwt-semibold);
+    } 
+
+    .contact-image img{
+        width: 250px;
+        height: 250px;
+    }
+
+}
+
+
+
+@media screen and (max-width:487px){
+
+    #contact-section{
+        width: 100%;
+        height: auto;
+        padding: 40px 0px;
+    }
+
+   .contact-content h1{
+    font-size: var(--fs-28);
+   } 
+
+   .contact-content p{
+    font-size: var(--fs-16);
+   }
+}
+
+
+/* ------------------------------------ */
+
+
+/* media quiery starts for accordion-section */
+
+@media screen and (max-width:1020px) {
+        
+    .accordion-item .accordion-content p{
+        font-size: var(--fs-14);
+        font-weight: var(--fwt-semibold);
+        padding: 12px 24px;
+    }
+
+
+    .accordion-img{
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .accordion-img img{
+        width: 300px;
+        height: 300px;
+        border-radius: 12px;
+    }
+
+
+    .accordion-item .set a{
+        width: 100%;
+        font-size: var(--fs-16);
+        color: var(--primary-color);
+        font-weight: var(--fwt-semibold);
+        padding: 12px 24px;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+}
+
+@media screen and (max-width:952px){
+
+
+    #accordion-section{
+        padding: 40px 0px;
+        margin: 20px 0px;
+    }
+    
+    
+.accordion-container{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+    .accordion-wrapper{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+    
+    .accordion-holder{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 12px;
+    }   
+
+    .accordion-item{
+        width: 100%;
+        height: auto;
+        background-color: var(--secondary-color);
+        padding: 12px ;
+        border-radius: 4px;
+    }
+
+
+    .accordion-item .set a{
+        width: 100%;
+        font-size: var(--fs-20);
+        color: var(--primary-color);
+        font-weight: var(--fwt-semibold);
+        padding: 12px;
+    }
+    
+
+    .accordion-item .accordion-content p{
+        font-size: var(--fs-16);
+        padding: 12px ;
+    }
+
+
+    .accordion-heading h1{
+        font-size: var(--fs-28);
+    }
+
+}
+
+@media  screen and (max-width:656px) {
+    
+    .accordion-heading h1{
+        font-size: var(--fs-24);
+    }
+
+    .accordion-item{
+        width: 100%;
+        height: auto;
+        background-color: var(--secondary-color);
+        padding: 8px ;
+        border-radius: 4px;
+    }
+
+}
+
+@media  screen and (max-width:562px) {
+    
+    #accordion-section{
+        padding: 20px 0px;
+        margin: 12px 0px;
+    }
+
+    .accordion-heading h1{
+        font-size: var(--fs-20);
+    }
+
+    .accordion-item .accordion-content p{
+        font-size: var(--fs-14);
+        padding: 12px ;
+    }
+
+}
+
+
+@media  screen and (max-width:482px) {
+   
+    
+    .accordion-item .set a{
+        width: 100%;
+        font-size: var(--fs-14);
+        color: var(--primary-color);
+        font-weight: var(--fwt-semibold);
+        padding: 12px;
+    }
+
+        
+    .accordion-heading h1{
+        font-size: var(--fs-16);
+    }
+
+    .accordion-item .accordion-content p{
+        font-size: var(--fs-12);
+        padding: 12px ;
+    }
+
+
+}
+
+
+/* media quiery ends for accordion-section */
+
+
+/* --------------------------------------- */
+
+/* media quiery for form starts */
+
+@media screen and (max-width:1124px) {
+
+.radio label{
+    font-size: 14px ;
+}
+
+}
+
+@media screen and (max-width:952px){
+
+    .form-row-one,.form-row-two,.form-row-three,.form-row-four {
+        width: 80%;
+    }
+
+    
+  .uname,.umail,.unumber,.city,.state,.radio-head,.textbox>label{
+    font-size: var(--fs-16);
+    color: var(--tertiary-black);
+}
+
+}
+
+
+@media screen and (max-width:850px){
+
+    .form-row-one,.form-row-two,.form-row-three,.form-row-four {
+        width: 90%;
+    }
+
+    .contact-heading h1{
+        font-size: 28px;
+    }
+
+    
+  .uname,.umail,.unumber,.city,.state,.radio-head,.textbox>label{
+    font-size: var(--fs-16);
+    color: var(--tertiary-black);
+}
+
+}
+
+@media screen and (max-width:735px){
+
+    .form-row-one,.form-row-two,.form-row-three,.form-row-four {
+        width: 100%;
+    }
+
+    
+  .uname,.umail,.unumber,.city,.state,.radio-head,.textbox>label{
+    font-size: var(--fs-16);
+    color: var(--tertiary-black);
+}
+
+}
+
+@media screen and (max-width:630px){
+    .form-row-three .radio-buttons {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: start;
+    }
+
+    .form-row-one .uname input {
+        padding: 10px; 
+    }
+
+    .form-row-one .umail input {
+        padding: 10px; 
+    }
+
+    .form-row-two .unumber input {
+        padding: 10px;
+    }
+
+    .form-row-two .city input {
+        padding: 10px;
+    }
+
+    .form-row-two .state input {
+        padding: 10px;
+    }
+}
+
+@media  screen and (max-width:425px) {
+
+    #form {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+        padding: 20px 0px;
+    }
+
+    .uname,.umail,.unumber,.city,.state,.radio-head,.textbox>label{
+        font-size: var(--fs-14);
+        color: var(--tertiary-black);
+    }
+
+    .form-container {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    #contact-form {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .contact-heading h1{
+        font-size: 24px;
+    }
+
+    .form-row-one {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .form-row-one .uname{
+        width: 100%;
+    }
+
+    .form-row-one .umail{
+        width: 100%;
+    }
+
+    .form-row-two {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .form-row-two .unumber{
+        width: 100%;
+    }
+
+    .form-row-two .uplace{
+        width: 100%;
+    }
+
+    .radio label{
+        font-size: 12px ;
+    }
+
+    #submitBtn{
+        border: none;
+        padding: 12px 24px;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        border-radius: 4px;
+        font-size: var(--fs-14);
+        font-weight: var(--fwt-semibold);
+    }
+}
+
+/* media quiery for form ends */
+
+
+/* ------------------------------------- */
+

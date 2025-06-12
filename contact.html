@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Page </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- nav start -->
+    <nav>
+        <div class="nav-container">
+
+            <div class="logo">
+                <img src="./svgs/Logo.svg" alt="logo">
+                <p> BEATBUDDIES</p>
+            </div>
+
+            <ul id="navLinks">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About </a></li>
+                <li><a href="./product.html">Products</a></li>
+                <li><a class="active" href="./contact.html">Contact</a></li>
+                <div class="cart hide-cart">
+                    <img src="./svgs/shop.svg" alt="">
+                    <img src="./svgs/profile.svg" alt="">
+                </div>
+            </ul>
+
+            <div class="search-bar" id="searchBar">
+                <div class="search-icon">
+                    <img src="./svgs/search icon.svg" alt="" class="hide-search">
+                </div>
+                <input id="searchInput" type="Search" placeholder="search products">
+            </div>
+
+            <div class="cart">
+                <img src="./svgs/shop.svg" alt="">
+                <img src="./svgs/profile.svg" alt="">
+            </div>
+
+            <div class="nav-menu">
+                <img src="./svgs/white-search.svg" alt="" class="show-search" id="navSearch">
+                <img src="./svgs/menu-bar.svg" alt="" id="menuBar">
+            </div>
+        </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- banner start -->
+     <section id="contact-section">
+        <div class="contact-container">
+            <div class="contact-content">
+                <h1>We're Here to Help Let's Connect</h1>
+                <p>For inquiries about our audio and wearable tech, support, or anything else We'd Love to Hear From You.</p>
+            </div>
+            <div class="contact-image">
+                <img src="/banner-images/contact banner.png" alt="" class="">
+            </div>
+        </div>
+     </section>
+     <!-- banner-end -->
+
+     
+     <!-- accordion start -->
+      <section id="accordion-section">
+        <div class="accordion-container">
+            <div class="accordion-heading">
+                <h1> BeatBuddies FAQs: Find Your Answers Here </h1>
+            </div>
+
+            <div class="accordion-wrapper">
+                <div class="accordion-img">
+                    <img src="./banner-images/accordion-banner.png" alt="">
+                </div>
+                <div class="accordion-holder">
+    
+                    <div class="accordion-item">
+                        <div class="set"id="accordion-collapse" >
+                            <a href="#" >How long does shipping take?<i class="fa-chevron-down fa-solid"></i></a>
+             
+                        </div>
+                        <div class="accordion-content">
+                            <p> Shipping typically takes 3-7 business days, depending on your location. You'll receive tracking details as soon as your order ships!</p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item">
+                        <div class="set" id="accordion-collapse">
+                            <a href="">Can I exchange an item?<i class="fa-chevron-down fa-solid" id="accIcon"></i></a>
+                        </div>
+                        <div class="accordion-content">
+                            <p>The item must be in new, unused condition and in its original packaging. Certain products may not be eligible for exchange, such as clearance items or personalized products.</p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item">
+                        <div class="set" id="accordion-collapse">
+                            <a href="#"> What types of payment methods do you accept?<i class="fa-chevron-down fa-solid"></i> </a>
+                            
+                        </div>
+                        <div class="accordion-content">
+                            <p>We accept a variety of payment methods, including major credit cards, PayPal, Apple Pay, Google Pay, and select regional payment options for your convenience.</p>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item">
+                        <div class="set" id="accordion-collapse">
+                            <a href="#">Do you sell genuine products?<i class="fa-chevron-down fa-solid"></i></a>
+
+                        </div>
+                        <div class="accordion-content">
+                           <p>Yes, we only sell 100% authentic products from trusted brands. We partner directly with manufacturers and authorized distributors to ensure that every item you purchase is genuine and of the highest quality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+      </section>
+     <!-- accordion end -->
+
+
+     <!-- contact form start -->
+
+     <section id="form">
+        <div class="form-container">
+            <div class="contact-heading">
+                <h1> Contact Us</h1>
+                
+            </div>
+
+                <form id="contact-form" >
+                    <div class="form-row-one">
+                        <div class="uname">
+                            <label for="username">Full Name</label>
+                            <input id="username" type="text" onkeyup="validateName()"  required>
+                            <span class="formErr" id="userErr"></span>
+                        </div>
+                        <div class="umail">
+                            <label for="usermail">Email Address</label>
+                            <input id="usermail" type="email" onkeyup="validateMail()" required>
+                            <span class="formErr" id="mailErr" ></span>
+                        </div>
+                    </div>
+                    <div class="form-row-two">
+                        <div class="unumber">
+                            <label for="usernumber">Mobile Number</label>
+                            <input id="usernumber" type="text" onkeyup="validateNumber()" required>
+                            <span class="formErr" id="numErr"></span>
+                            
+                        </div>
+                        <div class="uplace">
+                            <div class="city">
+                                <label for="ucity">City</label>
+                                <input id="ucity" type="text">
+                            </div>
+                            <div class="state">
+                                <label for="ustate">State</label>
+                                <input id="ustate" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row-three">
+                        <div class="radio-head">
+                            <label for="">Subject</label>
+                        </div>
+                        <div class="radio-buttons">
+
+                            <div class="radio">
+
+                                <input class="radioInput" id="orderEnquiry" name="faq"  type="radio" required>
+                                <label for="orderEnquiry">Order Enquiry</label>
+                            </div>
+                            <div class="radio">
+
+                                <input class="radioInput" id="Exchange" name="faq" type="radio" required>
+                                <label for="Exchange">Exchange Request </label>
+                            </div>
+                            <div class="radio">
+
+                                <input class="radioInput" id="payment" name="faq" type="radio" required>
+                                <label for="payment">Payment Issues</label>
+                            </div>
+                            <div class="radio">
+
+                                <input class="radioInput" id="general" name="faq" type="radio" required>
+                                <label for="general">General questions</label>
+                            </div>
+                            <div class="radio">
+
+                                <input class="radioInput" id="other" name="faq" type="radio" required>
+                                <label for="other">Others</label>
+                            </div>
+
+                            
+                        </div>
+                        <span></span>
+                    </div>
+                    <div class="form-row-four">
+                        <div class="textbox">
+                            <label for="umsg">Tell us What's up</label>
+                            <textarea rows="6"  name="message" id="umsg" onkeyup="validateText()" required></textarea>
+                            <span class="formErr" id="textErr"></span>
+                        </div>
+                    </div>
+
+                    <span id="validateErr"></span>
+                    <div class="form-btn">
+                        <button id="submitBtn" type="submit" onclick="validateForm()">Submit</button>
+                    </div>
+                </form>
+
+            
+        </div>
+     </section>
+
+     <!-- contact form end -->
+
+
+     <!-- footer start -->
+
+     <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="./svgs/Logo.svg" alt="">
+                <p>BEATBUDDIES</p>
+            </div>
+            <div class="footer-link">
+                <div class="quick-link">
+                    <h3> Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">Lightning Deals</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="about-link">
+                    <h3> About Us</h3>
+                    <ul>
+                        <li><a href="#">Our story </a></li>
+                        <li><a href="#">Carrers</a></li>
+                        <li><a href="#">Our Vision</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="product-link">
+                    <h3> Products </h3>
+                    <ul>
+                        <li><a href="#">Headphones</a></li>
+                        <li><a href="#">Smart Watches</a></li>
+                        <li><a href="#">Neckbands</a></li>
+                        <li><a href="#">Soundbars</a></li>
+                        <li><a href="#">Earbuds</a></li>
+                    </ul>
+                </div>
+
+                <div class="contact-link">
+                    <h3> Contact </h3>
+                    <ul>
+                        <li><a href="#">Connect with us</a></li> 
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Subscribe</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright 2025 All rights reserved | Beatbuddies</p>
+        </div>
+
+     </footer>
+
+     <!-- footer end -->
+
+    <script src="/js/script.js"></script>
+    <script src="./js/accordion.js"></script>
+    <script src="./js/form.js"></script>
+
+</body>
+</html>

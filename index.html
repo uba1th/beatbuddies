@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BeatBuddies home </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body>
+
+    <!-- nav start -->
+    <nav>
+        <div class="nav-container">
+
+            <div class="logo">
+                <img src="./svgs/Logo.svg" alt="logo">
+                <p> BEATBUDDIES</p>
+            </div>
+
+            <ul id="navLinks">
+                <li><a class="active" href="./index.html">Home</a></li>
+                <li><a href="./about.html">About </a></li>
+                <li><a href="./product.html">Products</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <div class="cart hide-cart">
+                    <img src="./svgs/shop.svg" alt="">
+                    <img src="./svgs/profile.svg" alt="">
+                </div>
+            </ul>
+
+            <div class="search-bar" id="searchBar">
+                <div class="search-icon">
+                    <img src="./svgs/search icon.svg" alt="" class="hide-search">
+                </div>
+                <input id="searchInput" type="Search" placeholder="search products">
+            </div>
+
+            <div class="cart">
+                <img src="./svgs/shop.svg" alt="">
+                <img src="./svgs/profile.svg" alt="">
+            </div>
+
+            <div class="nav-menu">
+                <img src="./svgs/white-search.svg" alt="" class="show-search" id="navSearch">
+                <img src="./svgs/menu-bar.svg" alt="" id="menuBar">
+            </div>
+        </div>
+    </nav>
+    <!-- nav end -->
+
+
+    <!-- banner start -->
+
+    <section id="banner">
+        <div class="banner-container">
+
+                <div class="slides slide">
+                    <img class="slideimg" src="./banner-images/watch-banner-image (1).jpg" alt="">
+                    <div class="slide-wrapper">
+                        <div class="slide-left-content">
+                            <h1>Your Life Connected</h1>
+                            <p>Track your fitness goals, stay connected, and manage your day with our advanced smartwatches.</p>
+                            <button type="button"><a href="#">Shop Now</a></button>
+                        </div>
+                        <div class="slide-right-content">
+                            <img src="./carousel-images/carousel-watch.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slides slide">
+                    <img class="slideimg" src="./banner-images/speaker-banner-image.jpg" alt="">
+                    <div class="slide-wrapper">
+                        <div class="slide-left-content">
+                            <h1>Elevate Your Home Theater</h1>
+                            <p>Transform your living room into a cinematic experience with our powerful and immersive soundbars.</p>
+                            <button type="button"><a href="#">Shop Now</a></button>
+                        </div>
+                        <div class="slide-right-content">
+                            <img src="./carousel-images/carousel-speaker.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slides slide">
+                     <img class="slideimg" src="./banner-images/neckband banner image.jpg" alt="">
+                    <div class="slide-wrapper">
+                        <div class="slide-left-content">
+                            <h1>Comfort That Stays With You</h1>
+                            <p>Experience all-day comfort with our lightweight and flexible neckband design</p>
+                            <button type="button"><a href="#">Shop Now</a></button>
+                        </div>
+                        <div class="slide-right-content">
+                            <img src="./carousel-images/carousel-neckband.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slides slide">
+                      <img class="slideimg" src="./banner-images/headphone-banner-image.jpg" alt="">
+                    <div class="slide-wrapper">
+                        <div class="slide-left-content">
+                            <h1>Escape into Sound</h1>
+                            <p>Experience crystal-clear audio and deep, immersive bass with our premium headphones</p>
+                            <button type="button"><a href="#">Shop Now</a></button>
+                        </div>
+                        <div class="slide-right-content">
+                            <img src="./carousel-images/carousel-headphone.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slides slide">
+                     <img class="slideimg" src="./banner-images/earbud-banner-image.jpg" alt="">
+                    <div class="slide-wrapper">
+                        <div class="slide-left-content">
+                            <h1>Silence the World Around You</h1>
+                            <p>Advanced noise cancellation for pure, uninterrupted listening.</p>
+                            <button type="button"><a href="#">Shop Now</a></button>
+                        </div>
+                        <div class="slide-right-content">
+                            <img src="./carousel-images/carousel-earbud.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="carousel-indicators">
+                <span class="indicator" data-slide="0" ></span>
+                <span class="indicator" data-slide="1" ></span>
+                <span class="indicator" data-slide="2" ></span>
+                <span class="indicator" data-slide="3" ></span>
+                <span class="indicator" data-slide="4" ></span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- banner end -->
+
+
+    <!-- categories starts -->
+
+    <section id="category">
+        <div class="category-container">
+            <div class="category-heading">
+                <h3>Shop by Categories</h3>
+            </div>
+            <div class="category-holder">
+                <div class="category-image">
+                    <img src="./images/product-frames/headphone-frame.png" alt="">
+                    <p> Headphones </p>
+                </div>
+                <div class="category-image">
+                    <img src="./images/product-frames/watch-frame.png" alt="">
+                    <p> Smart Watch </p>
+                </div>
+                <div class="category-image">
+                    <img src="./images/product-frames/earbud-frame.png" alt="">
+                    <p> Earbuds </p>
+                </div>
+                <div class="category-image">
+                    <img src="./images/product-frames/speakers-frame.png" alt="">
+                    <p> Speakers </p>
+                </div>
+                <div class="category-image">
+                    <img src="./images/product-frames/soundbar-frame.png" alt="">
+                    <p> Soundbars </p>
+                </div>
+                <div class="category-image">
+                    <img src="./images/product-frames/neckband-frame.png" alt="">
+                    <p> Neckbands </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- categories ends -->
+
+
+    <!-- trending starts  -->
+
+    <section id="trending">
+
+        <div class="trending-container">
+
+            <div class="trending-heading">
+                <h3> Just Trending </h3>
+                <p><a href="#">view more</a> </p>
+            </div>
+            <div class="trending-wrapper">
+
+                <span class="prev"><img src="./svgs/ArrowLeftShort.svg" alt="prev"></span>
+
+                <div class="trending-holder">
+
+                    <div class="trending-card">
+                        <img src="./images/All Images/Watches/samsung.png" alt="samsung-galazy-watch">
+                        <div class="trending-card-body">
+                            <div class="trending-card-header">
+                                <h3>Galaxy Watch 5</h3>
+                                <p>The Samsung Galaxy Watch 5 offers a sleek, feature-rich smartwatch experience.
+                                    Available in various sizes and colors</p>
+                            </div>
+                            <div class="trending-card-footer">
+                                <p> ₹22,999 </p>
+                                <button type="button">Buy Now </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="trending-card">
+                        <img src="./images/All Images/Neckbands/boult curve x.png" alt="boult-curve-x">
+                        <div class="trending-card-body">
+                            <div class="trending-card-header">
+                                <h3>Boult Curve X</h3>
+                                <p>The Boult Curve X wireless neckband earphones deliver a blend of comfort for your
+                                    daily audio needs.</p>
+                            </div>
+                            <div class="trending-card-footer">
+                                <p> ₹799 </p>
+                                <button type="button">Buy Now </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="trending-card">
+                        <img src="./images/All Images/Sound Bars/Boat avante bar.png" alt="boat-avante-bar">
+                        <div class="trending-card-body">
+                            <div class="trending-card-header">
+                                <h3>boAt Avante Bar</h3>
+                                <p>The boat Avante bar delivers an immersive audio experience with its powerful output
+                                </p>
+                            </div>
+                            <div class="trending-card-footer">
+                                <p> ₹11,500 </p>
+                                <button type="button">Buy Now </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="trending-card">
+                        <img src="./images/All Images/Headphones/Boat headphone.png" alt="boat-rockerz">
+                        <div class="trending-card-body">
+                            <div class="trending-card-header">
+                                <h3>boAt Rockerz 370</h3>
+                                <p>The boAt Rockerz 370 wireless headphones offer a convenient and enjoyable listening
+                                    experience. </p>
+                            </div>
+                            <div class="trending-card-footer">
+                                <p> ₹1,499 </p>
+                                <button type="button">Buy Now </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="trending-card">
+                        <img src="./images/All Images/Speakers/beats-speaker.png" alt="samsung-galazy-watch">
+                        <div class="trending-card-body">
+                            <div class="trending-card-header">
+                                <h3>Beats Pill</h3>
+                                <p>The Beats Pill+ is a portable Bluetooth speaker designed for powerful sound on the go
+                                </p>
+                            </div>
+                            <div class="trending-card-footer">
+                                <p> ₹14,999</p>
+                                <button type="button">Buy Now </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <span class="next"><img src="./svgs/ArrowRightShort.svg" alt="prev"></span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- trending ends  -->
+
+
+    <!-- skull-banner starts -->
+
+    <section id="skull-banner">
+        <div class="skull-banner-container">
+            <div class="skull-banner-right">
+                <h1>PURE WIRELESS IMMERSION</h1>
+                <p>Experience powerful sound and all day comfort in a sleek, wireless design. The Hesh Evo is your
+                    gateway to pure audio bliss.</p>
+                <button>Shop Hesh Evo</button>
+            </div>
+            <div class="skull-banner-left">
+                <img src="./images/product-images/skullcandy.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--skull-banner ends -->
+
+    <!-- lighting deals starts -->
+
+    <section id="deals">
+        <div class="deals-container">
+            <div class="deals-heading">
+                <h3>Lighting Deals</h3>
+                <p><a href="#">view more</a></p>
+            </div>
+            <div class="deals-wrapper">
+
+                <div class="deals-card">
+
+                    <img src="./images/All Images/Headphones/fire boullt-headphone.png" alt="">
+
+                    <div class="deals-card-body">
+
+                        <div class="deals-card-header">
+                            <h3>Fire-Boltt Blast 1400</h3>
+                            <p>Experience powerful bass and clear audio with the Fire-Boltt Blast 1400.</p>
+                        </div>
+
+                        <div class="deals-card-footer">
+
+                            <div class="deals-price">
+                                <p> Price </p>
+                                <p> ₹2,999</p>
+                            </div>
+
+                            <div class="deals-offer">
+                                <p> Deal </p>
+                                <p> ₹2,799</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button> Buy Now </button>
+
+                </div>
+
+                <div class="deals-card">
+
+                    <img src="./images/All Images/Sound Bars/Sony HT-A300.png" alt="">
+
+                    <div class="deals-card-body">
+
+                        <div class="deals-card-header">
+                            <h3>Sony HT-A3000</h3>
+                            <p>Experience Dolby Atmos and DTS:X. Built-in subwoofer with wireless options.</p>
+                        </div>
+
+                        <div class="deals-card-footer">
+
+                            <div class="deals-price">
+                                <p> Price </p>
+                                <p> ₹52,989</p>
+                            </div>
+
+                            <div class="deals-offer">
+                                <p> Deal </p>
+                                <p> ₹49,782</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button> Buy Now </button>
+
+                </div>
+
+                <div class="deals-card">
+
+                    <img src="./images/All Images/Watches/boult.png" alt="">
+
+                    <div class="deals-card-body">
+
+                        <div class="deals-card-header">
+                            <h3>boAt Xtend Pro</h3>
+                            <p>Enjoy a seamless blend of style and functionality, with a sleek design and long lasting
+                                battery life.</p>
+                        </div>
+
+                        <div class="deals-card-footer">
+
+                            <div class="deals-price">
+                                <p> Price </p>
+                                <p> ₹1,799</p>
+                            </div>
+
+                            <div class="deals-offer">
+                                <p> Deal </p>
+                                <p> ₹1,599</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button> Buy Now </button>
+
+                </div>
+
+                <div class="deals-card">
+
+                    <img src="./images/All Images/Neckbands/oneplus bullet.png" alt="">
+
+                    <div class="deals-card-body">
+
+                        <div class="deals-card-header">
+                            <h3>OnePlus Bullets Wireless</h3>
+                            <p>Experience rich, clear sound with the OnePlus Bullets Wireless neckband headphones</p>
+                        </div>
+
+                        <div class="deals-card-footer">
+
+                            <div class="deals-price">
+                                <p> Price </p>
+                                <p> ₹1,450</p>
+                            </div>
+
+                            <div class="deals-offer">
+                                <p> Deal </p>
+                                <p> ₹1,125</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button> Buy Now </button>
+
+                </div>
+
+                <div class="deals-card">
+
+                    <img src="./images/All Images/Speakers/jbl-speaker.png" alt="">
+
+                    <div class="deals-card-body">
+
+                        <div class="deals-card-header">
+                            <h3>JBL Flip 4</h3>
+                            <p>Bring powerful JBL sound wherever you go with the Flip 4 portable Bluetooth speaker. </p>
+                        </div>
+
+                        <div class="deals-card-footer">
+
+                            <div class="deals-price">
+                                <p> Price </p>
+                                <p> ₹7,180</p>
+                            </div>
+
+                            <div class="deals-offer">
+                                <p> Deal </p>
+                                <p> ₹6,756</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button> Buy Now </button>
+
+                </div>
+
+                <div class="deals-card">
+
+                    <img src="./images/All Images/Watches/Titan.png" alt="">
+
+                    <div class="deals-card-body">
+
+                        <div class="deals-card-header">
+                            <h3>Boult Drift</h3>
+                            <p>Elevate your look with the sleek Boult Drift. Track fitness control music, all on your
+                                wrist</p>
+                        </div>
+
+                        <div class="deals-card-footer">
+
+                            <div class="deals-price">
+                                <p> Price </p>
+                                <p> ₹1,399</p>
+                            </div>
+
+                            <div class="deals-offer">
+                                <p> Deal </p>
+                                <p> ₹1,149</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button> Buy Now </button>
+
+                </div>
+
+                <div class="deals-card">
+
+                    <img src="./images/All Images/Headphones/skullcandy-headphone.png" alt="">
+
+                    <div class="deals-card-body">
+
+                        <div class="deals-card-header">
+                            <h3>Skullcandy Hesh Evo</h3>
+                            <p>Enjoy 36 hours of battery, rapid charge, and a collapsible design</p>
+                        </div>
+
+                        <div class="deals-card-footer">
+
+                            <div class="deals-price">
+                                <p> Price </p>
+                                <p> ₹7,498</p>
+                            </div>
+
+                            <div class="deals-offer">
+                                <p> Deal </p>
+                                <p> ₹6,548</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button> Buy Now </button>
+
+                </div>
+
+                <div class="deals-card">
+
+                    <img src="./images/All Images/Earbuds/noise bud.png" alt="">
+
+                    <div class="deals-card-body">
+
+                        <div class="deals-card-header">
+                            <h3>Noise Buds VS104</h3>
+                            <p>The Noise Buds VS104 offer a compelling blend of features for budget-conscious users.</p>
+                        </div>
+
+                        <div class="deals-card-footer">
+
+                            <div class="deals-price">
+                                <p> Price </p>
+                                <p> ₹1,499</p>
+                            </div>
+
+                            <div class="deals-offer">
+                                <p> Deal </p>
+                                <p> ₹1,299</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button> Buy Now </button>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- lighting deals ends -->
+
+    <!-- our blogs starts -->
+
+    <section id="blog">
+
+        <div class="blog-container">
+            <div class="blog-header">
+                <h3>Our Blog</h3>
+            </div>
+            <div class="blog-holder">
+
+                <div class="blog-card">
+                    <img src="./images/blog-images/buds.jpg" alt="">
+                    <div class="blog-card-body">
+                        <h4>Choosing the Right Type for Your Ears</h4>
+                        <p class="truncate">We'll demystify the different types, explaining their unique advantages and
+                            ideal use cases. Whether you're a music enthusiast, a fitness fanatic, or a frequent
+                            traveler, we'll guide you to the perfect headphone harmony.</p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <img src="./images/blog-images/gadgets.jpg" alt="">
+                    <div class="blog-card-body">
+                        <h4>Essential Gadgets for Your Active Lifestyle</h4>
+                        <p class="truncate">We'll showcase must-have gadgets like waterproof earbuds, rugged
+                            smartwatches, and portable speakers that keep you connected and entertained on the move.</p>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <img src="./images/blog-images/speakers.jpg" alt="">
+                    <div class="blog-card-body">
+                        <h4>Essential Gadgets for Your Active Lifestyle</h4>
+                        <p class="truncate">We'll break down how to interpret dB ratings, what they signify for your
+                            listening experience, and how to choose speakers that deliver the perfect volume for your
+                            space.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="brand">
+
+        <div class="brand-container">
+
+            <div class="brand-heading">
+                <h3>Brands we carry</h3>
+            </div>
+
+            <div class="brand-holder">
+                <ul>
+                    <img src="./images/brand-images/sony.png" alt="sony">
+                    <img src="./images/brand-images/boult.png" alt="boult">
+                    <img src="./images/brand-images/skullcandy.png" alt="skullcandy">
+                    <img src="./images/brand-images/boltt.png" alt="boltt">
+                    <img src="./images/brand-images/samsung.png" alt="samsung">
+                    <img src="./images/brand-images/boat.png" alt="boat">
+                    <img src="./images/brand-images/JBL.png" alt="jbl">
+                </ul>
+
+                <ul>
+                    <img src="./images/brand-images/sony.png" alt="sony">
+                    <img src="./images/brand-images/boult.png" alt="boult">
+                    <img src="./images/brand-images/skullcandy.png" alt="skullcandy">
+                    <img src="./images/brand-images/boltt.png" alt="boltt">
+                    <img src="./images/brand-images/samsung.png" alt="samsung">
+                    <img src="./images/brand-images/boat.png" alt="boat">
+                    <img src="./images/brand-images/JBL.png" alt="jbl">
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- our blogs ends -->
+
+
+    <!-- subscribe starts -->
+
+    <section id="subscribe">
+        <div class="subscribe-container">
+            <div class="subscribe-heading">
+                <h3>Never miss a beat Subscribe Today</h3>
+                <p>Subscribe to our newsletter for exclusive deals, early access to new audio gear, and the latest tech
+                    tips delivered straight to your inbox.</p>
+            </div>
+            <div class="subscribe-form">
+                <input type="email" name="" id="" placeholder="Enter your mail">
+                <button type="button">Send</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- subscribe ends -->
+
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="./svgs/Logo.svg" alt="" />
+                <p>BEATBUDDIES</p>
+            </div>
+            <div class="footer-link">
+                <div class="quick-link">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Trending</a></li>
+                        <li><a href="#">Lightning Deals</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="about-link">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">Our story </a></li>
+                        <li><a href="#">Carrers</a></li>
+                        <li><a href="#">Our Vision</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="product-link">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#">Headphones</a></li>
+                        <li><a href="#">Smart Watches</a></li>
+                        <li><a href="#">Neckbands</a></li>
+                        <li><a href="#">Soundbars</a></li>
+                        <li><a href="#">Earbuds</a></li>
+                    </ul>
+                </div>
+
+                <div class="contact-link">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="#">Connect with us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Subscribe</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright 2025 All rights reserved | Beatbuddies</p>
+        </div>
+    </footer>
+
+
+    <script src="./js/script.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/slider.js"></script>
+
+
+</body>
+
+</html>
