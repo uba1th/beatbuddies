@@ -1,7 +1,14 @@
+
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
 
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif !important;
+}
+
 body {
-  font-family: 'Poppins', sans-serif !important;
   position: relative;
   z-index: 0;
 }
@@ -124,6 +131,9 @@ body {
     height: 400px;
 }
 
+.about-btn button a{
+    color: var(--secondary-color);
+}
 
 
 /* about-section ends */
@@ -408,8 +418,8 @@ body {
     height: auto;
     display: flex;
     overflow: hidden;
-    /* background-color: #4716CF; */
-    padding: 12px 0px;
+    padding: 12px 12px;
+    box-sizing: border-box;
 }
 
 
@@ -540,6 +550,10 @@ body {
 }
 
 
+.community-container button a{
+    color: var(--secondary-color);
+}
+
 
 
 
@@ -578,7 +592,6 @@ body {
         justify-content: center;
         align-items: center;
         padding: 40px 0px;
-        margin: 40px 0px;
         position: relative;
         z-index: -2;
         
@@ -708,9 +721,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        
-        padding: 40px 0px;
-        margin: 20px 0px;
+        padding: 20px 0px;
         
     }
 

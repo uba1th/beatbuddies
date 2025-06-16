@@ -339,7 +339,7 @@ nav {
         padding: 20px;
         margin-top: 20px;
         border-radius: 12px;
-        transition: 2s;
+        transition: .7s;
         /* opacity: 0; */
         z-index: -1;
 
@@ -347,7 +347,7 @@ nav {
 
     .nav-container ul.active {
         top: 100px;
-        transition: 2s;
+        transition: .7s;
         opacity: 1;
         z-index: -1;
     }
@@ -493,12 +493,12 @@ nav {
         top: 100%;
         margin-top: 20px;
         opacity: 0;
-        transition: 2s ease-out;
+        transition: .5s ease-out;
     }
 
     .search-bar.active {
         opacity: 1;
-        transition: 2s ease-in;
+        transition: .5s ease-in;
     }
 
     .search-bar input {

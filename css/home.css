@@ -350,6 +350,10 @@
     border-radius: 4px;
 }
 
+.trending-card-footer button a{
+    color: var(--secondary-color);
+}
+
 .prev,
 .next {
     position: absolute;
@@ -451,6 +455,9 @@
     font-size: var(--fs-16);
 }
 
+.skull-banner-right button a{
+    color: var(--secondary-color);
+}
 
 /* skull banner ends */
 
@@ -493,9 +500,10 @@
     overflow: hidden;
     scroll-behavior: smooth;
     overflow-x: scroll;
-    scrollbar-width: none;
-    padding: 4px 0px;
-
+    scrollbar-width: 20px;
+    padding: 40px 8px;
+     scrollbar-width: thin; 
+    scrollbar-color: #4716CF #F8F8F8; /* thumb color | track color */
 }
 
 .deals-heading h3 {
@@ -592,6 +600,9 @@
     border-radius: 8px;
 }
 
+.deals-card button a{
+    color: var(--secondary-color);
+}
 
 /* lightning deals ends */
 
@@ -817,6 +828,7 @@
     font-weight: var(--fwt-semibold);
     padding: 12px 16px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 
@@ -877,6 +889,19 @@
 
 
     /* banner starts */
+
+    #banner {
+    width: 100%;
+    height: auto;
+}
+
+.banner-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    padding: 80px 0px;
+}
 
     .slide-right-content {
     width: auto;
