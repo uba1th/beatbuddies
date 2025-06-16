@@ -11,6 +11,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    position: relative;
+    z-index: 0;
 }
 
 /* font end */
@@ -347,6 +349,7 @@ nav {
         top: 100px;
         transition: 2s;
         opacity: 1;
+        z-index: -1;
     }
 
 

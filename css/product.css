@@ -381,7 +381,6 @@ body {
     .nav-holder {
         width: 100%;
         height: auto;
-        background-color: rgb(114, 85, 47);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -409,19 +408,21 @@ body {
 }
 
 @media screen and (max-width:952px) {
-    #product-banner {
-        width: 100%;
-        height: auto;
-        background-color: var(--tertiary-black);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px 0px;
-        top: 80px;
-        left: 0px;
-    }
+#product-banner {
+    width: 100%;
+    background-color: var(--tertiary-black);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.product{
+    position: relative;
+    z-index: -3;
+}
 
     .product-banner-container {
         padding: 0px 0px;
@@ -453,7 +454,6 @@ body {
     .tab-content {
         width: auto;
         height: auto;
-        background-color: #4716CF;
         display: flex;
         justify-content: center;
         gap: 40px;
@@ -523,7 +523,6 @@ body {
     .tab-content {
         width: auto;
         height: auto;
-        background-color: #4716CF;
         display: flex;
         justify-content: center;
         gap: 40px;
@@ -638,7 +637,6 @@ body {
     .nav-holder {
         width: 100%;
         height: auto;
-        background-color: rgb(114, 85, 47);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -664,7 +662,6 @@ body {
     .tab-content {
         width: auto;
         height: auto;
-        background-color: #4716CF;
         display: flex;
         justify-content: center;
         gap: 40px;
