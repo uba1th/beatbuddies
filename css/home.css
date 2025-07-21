@@ -220,6 +220,7 @@
     justify-content: center;
     align-items: center;
     padding: 40px 0px;
+    overflow: hidden;
 }
 
 .trending-container {
@@ -2571,7 +2572,6 @@
         display: flex;
         gap: 16px;
         flex-shrink: 0;
-        white-space: 0;
         overflow: hidden;
         scroll-behavior: smooth;
         overflow-x: scroll;

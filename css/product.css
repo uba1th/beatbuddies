@@ -186,24 +186,26 @@ body {
 
 
 .tab-holder {
-    width: auto;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: #4716CF; */
 }
 
 
 .tab-content {
-    width: auto;
+    width: 80%;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     gap: 40px;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     box-sizing: border-box;
     display: none;
+    
 }
 
 
@@ -322,6 +324,17 @@ body {
 
     /* product banner end -------------------- */
 
+}
+
+@media screen and (max-width:1045px){
+    .tab-holder {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #4716CF; */
+}
 }
 
 @media screen and (max-width:1033px) {
@@ -455,7 +468,7 @@ body {
         width: auto;
         height: auto;
         display: flex;
-        justify-content: center;
+        justify-content: start;
         gap: 40px;
         flex-wrap: wrap;
         align-items: center;
